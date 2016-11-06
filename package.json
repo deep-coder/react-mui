@@ -1,0 +1,53 @@
+{
+  "name": "react-materialUI-components",
+  "version": "0.1.1",
+  "description": "Material UI React Components using Material UI",
+  "keywords": [
+    "react-component",
+    "react",
+    "material-ui"
+  ],
+  "main": "lib/index.js",
+  "author": "Deepak Jain <deepak.jain087@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --progress --inline --hot --content-base example/ --port 1342",
+    "compile": "rimraf lib && babel src -d lib",
+    "build": "webpack --progress --bail",
+    "lint": "eslint src --ext=js,jsx",
+    "prepublish": "npm run lint && npm run compile"
+  },
+  "dependencies": {
+    "material-ui": "^0.16.1",
+    "ramda": "^0.22.1",
+    "react-addons-css-transition-group": ">=0.14 <16",
+    "react-jss-preset-civicsource": "1.x",
+    "react-tap-event-plugin": "^1.0.0",
+    "toetag": "3.x"
+  },
+  "peerDependencies": {
+    "react": ">=0.14 <16"
+  },
+  "devDependencies": {
+    "babel-cli": "6.x",
+    "babel-loader": "6.x",
+    "babel-plugin-transform-export-extensions": "6.x",
+    "babel-preset-es2015": "6.x",
+    "babel-preset-react": "6.x",
+    "babel-preset-react-hmre": "1.x",
+    "babel-preset-stage-2": "6.x",
+    "component-playground": "1.x",
+    "css-loader": "0.25.x",
+    "eslint": "3.x",
+    "eslint-config-civicsource": "2.x",
+    "json-loader": "0.5.x",
+    "raw-loader": "0.5.x",
+    "react": "15.x",
+    "react-dom": "15.x",
+    "react-remarkable": "1.x",
+    "rimraf": "2.x",
+    "style-loader": "0.13.x",
+    "webpack": "1.x",
+    "webpack-dev-server": "1.x"
+  }
+}
